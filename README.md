@@ -1,5 +1,12 @@
 # DevOps en autonomie
 
+le fichier cd yaml ce situe dans : workflows/cd.yaml
+le fichier ci yaml ce situe dans : workflows/ci.yaml
+
+le fichier helm ce situe dans : le repertoire racine
+le pdf détaillant l'ensemble des étapes suivies pour  le tp 
+
+
 ## Getting started
 L'application utilise python en version 3.13.2, elle peut fonctionner avec d'autre version également.
 
