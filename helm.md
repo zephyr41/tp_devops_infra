@@ -24,19 +24,15 @@ docker tag mon-app:latest z3ph7r/mon-app:latest
 
 
 docker push z3ph7r/mon-app:latest
+
 Ingress Controller NGINX
 
 
 helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
 
 
-helm install nginx-ingress ingress-nginx/ingress-nginx --create-namespace --namespace ingress-nginx
-
-
-kubectl get svc -n ingress-nginx
-
-
-helm install nginx-ingress ingress-nginx/ingress-nginx --version 4.10.0
+helm install nginx-ingress ingress-nginx/ingress-nginx --version 4.10.0 
+// (installation de version 4.10.0 car bug avec la version latest)
 
 
 kubectl get svc -n ingress-nginx
