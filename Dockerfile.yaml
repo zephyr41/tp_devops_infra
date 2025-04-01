@@ -1,0 +1,17 @@
+# Dockerfile (renomme bien ton fichier en "Dockerfile" si besoin)
+FROM python:3.9
+
+# 1. Définir le répertoire de travail
+WORKDIR /src
+
+# 2. Copier le fichier requirements.txt et installer les dépendances
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# 3. Copier tout le code dans le container
+COPY . .
+
+# 4. Lancer l'app
+CMD ["python", "/src/app.py"]
+
+EXPOSE 8080
