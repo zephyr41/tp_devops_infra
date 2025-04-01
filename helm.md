@@ -27,7 +27,6 @@ docker push z3ph7r/mon-app:latest
 
 Ingress Controller NGINX
 
-
 helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
 
 
